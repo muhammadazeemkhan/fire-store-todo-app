@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div id="signup">
+        <h1>signup</h1>
+        <p>Name: </p> <input type="text" id="signup-user-name">
+        <p>Email: </p> <input type="text" id="signup-email">
+        <p>Password: </p> <input type="text" id="signup-password">
+
+        <br> <br>
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+
+    <div id="login">
+        <h1>login</h1>
+        <p>Name: </p> <input type="text" id="login-user-name">
+        <p>Email: </p> <input type="text" id="login-email">
+        <p>Password: </p> <input type="text" id="login-password">
+
+        <br> <br>
+        <button onclick="login()">login</button>
+    </div>
+
+
+    <div id="main" style="display: none;">
+    <h1>Todo App</h1>
+
+    <div id="todo-main">
+        <input type="text" id="todo-input">
+        <button id="add-todo">Add todo</button>
+        <button id="deleteAll-btn">Delete All</button>
+    </div>
+
+    <ul id="todo-list">
+
+    </ul>
+
+    <button onclick="signOut()" id="logout">Logout</button>
+</div>
+
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
